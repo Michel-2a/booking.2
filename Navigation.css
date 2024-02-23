@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
+
+:root {
+    --main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --border-color: rgba(0,   0,   0,   0.192);
+    --button-bg-color: rgba(238,   194,   84,   0.726);
+    --nav-height:   45px;
+    --nav-margin:   25px;
+    --nav-border-radius:   30px;
+    --nav-shadow:   0   0   0.5px   0;
+}
+
+/* Styles communs */
+body, html {
+    height:   100%;
+    margin:   0;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-size:   1rem;
+    font-weight:   500;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #0a0909;
+}
+
+/* Styles pour les grands écrans */
+.navbar {
+    position: fixed; /* Utilisez fixed pour que la barre de navigation reste en haut de l'écran */
+    top:  0; /* Positionne la barre de navigation en haut de l'écran */
+    width:  100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    border-bottom:  1px solid var(--border-color);
+    box-shadow:  0px  0px  5px  0px rgba(46,  36,  36,  0.548);
+    z-index:  1000; /* Assurez-vous que le z-index est suffisamment élevé */
+}
+
+.logo img {
+    width:   60px;
+    margin-left:   20px;
+}
+
+.navigation-bar {
+    width:   60%;
+    height: var(--nav-height);
+    background: #dacece50;
+    border-radius: var(--nav-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--nav-margin) auto;
+    border-bottom:   1px solid var(--border-color);
+    box-shadow: 0px 0px 3px 0px rgba(46, 36, 36, 0.548);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    gap: 50px;
+    padding-left: 22%;
+    cursor: pointer;
+}
+.profile-menu {
+    position: fixed; 
+    top:   12%; 
+    right:   0;
+    margin-right:   50px;
+    background-color: #fff;
+    border:   1px solid #ccc;
+    padding:   10px;
+    border-radius:   10px;
+    height:   200px;
+    z-index:   1000;
+    width:   200px;
+    box-shadow:   0   2px   4px rgba(0,   0,   0,   0.1);
+  }
+  
+  .relative img{
+    cursor: pointer;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+
+  .profile-menu ul li {
+    text-align: justify;
+    cursor: pointer;
+    list-style-type: none;
+    margin-bottom:  -10px;
+    transition: background-color  0.3s ease; /* Ajoute une transition pour un effet doux */
+    padding:  10px; /* Ajoute de l'espace à l'intérieur de chaque élément de liste */
+  }
+  
+  .profile-menu ul li:hover {
+    background-color: #cccccc71; /* Couleur de fond lors du survol */
+    border-radius:  5px; /* Arrondit les coins de l'élément lors du survol */
+  }
+  
+
+  
+
+.bar1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bar1 a:not(:last-child) {
+    border-right:   1px solid var(--border-color);
+    align-items: center;
+    padding-right:   10px;
+}
+
+.navigation-bar .menu li:nth-child(3) {
+    border-right: none;
+}
+
+button {
+    border:   1px solid rgb(248, 246, 246);
+    border-radius:   50%;
+    background: var(--button-bg-color);
+    color: #fff;
+    cursor: pointer;
+    margin-right: 0.5%;
+    padding:   10px;
+}
+
+.language {
+    margin-right:   2%;
+    margin-top: 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right:   60px;
+    margin-bottom: -5px;
+    border-radius:   25px;
+    
+}
+
+.navbar-responsive{
+    display: none;
+}
+ .responsive-nav{
+    display: none;
+ }
+/* Styles pour la barre de navigation en mode responsive */
+@media screen and (max-width:   768px) {
+    .navbar {
+      position: fixed;
+      /* top:   0;
+      left:   0; */
+      width:   100%;
+      height: auto;
+      background: #fff;
+      border: none;
+      padding:   10px   30px;
+      z-index:   9999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow:   0   2px   4px rgba(0,   0,   0,   0.288);
+    }
+  
+    .logo {
+      margin-right:   0; 
+    }
+  
+    .logo img {
+      max-height:   40px;
+      max-width:   60%;
+      width:   70px;
+    margin-left: 0px;
+    }
+  
+    .language-icon {
+      margin-left:   150px; 
+    }
+  
+    .profile-menu {
+      position: fixed;
+      top:   10%;
+      right:   0;
+      margin-right:   40px;
+      background-color: #fff;
+      border:   1px solid #ccc;
+      padding:   10px;
+      border-radius:   10px;
+      height:   200px;
+      z-index:   1000;
+      width:   200px;
+      box-shadow:   0   2px   4px rgba(0,   0,   0,   0.1);
+    }
+  
+    .relative img {
+      cursor: pointer;
+      margin-right:   5px;
+      margin-top:   10px;
+    }
+  
+    .navigation-bar {
+      position: fixed;
+      bottom: -20px;
+      left:   0;
+      width:   100%;
+      height:   50px;
+      background: #fff;
+      margin-top:   24px;
+      transition: bottom   0.3s ease;
+    }
+  
+    .menu {
+      gap:   20px;
+      padding-left:   12%;
+      font-size:   12px;
+    }
+  
+    .bar1 a {
+      font-size:   15px;
+      font-weight:   600;
+    }
+  
+    button {
+      border:   1px solid rgb(248,   246,   246);
+      border-radius:   50%;
+      background: var(--button-bg-color);
+      color: #fff;
+      cursor: pointer;
+      margin-right:   1.5%;
+      padding:   10px;
+      transition: background-color   0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #ddd;
+    }
+  }
+  
+
+  @media screen and (min-width:   1285px) {
+    .navigation-bar {
+        width:   60%;
+        height: var(--nav-height);
+        background: #dacece50;
+        border-radius: var(--nav-border-radius);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: var(--nav-margin) auto;
+        border-bottom:   1px solid var(--border-color);
+        box-shadow: 0px 0px 3px 0px rgba(46, 36, 36, 0.548);
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        gap: 50px;
+        padding-left: 22%;
+        cursor: pointer;
+    }
+  }
+  
