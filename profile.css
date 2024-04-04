@@ -1,0 +1,118 @@
+
+.box-profil{
+    margin-top: 120px;
+    display: flex;
+}
+
+.reservation-left, .reservation-right {
+    box-sizing: border-box; 
+    padding: 20px;
+}
+
+
+.box-right{
+    margin-top: 50px;
+    width: 55%; 
+    height: 100vh;
+}
+.box-right h3{
+    font-size: 20px;
+    margin-left: 50px;
+    font-weight: 700;
+}
+.btn-profil{
+    width: 100%;
+    margin-left: 50px;
+    border: 1px solid rgba(238, 227, 227, 0.877);
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+}
+
+.btn-profil img{
+    width: 30%;
+    border-radius: 50%;
+    border: 1px solid rgba(238, 227, 227, 0.877);
+    background: rgba(34, 28, 28, 0.616);
+}
+ 
+.btn-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.btn-text h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.box-left   {
+    width: 25%; 
+    height: 77vh;
+    position: fixed; 
+    top: 130px; 
+    right: 60px; 
+    bottom: 0; 
+    overflow: auto; 
+    padding: 20px;
+    border: 1px solid rgba(238, 227, 227, 0.877);
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+}
+
+.btn-card input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.btn-card  input[type="text"]:focus {
+    outline: none; 
+}
+
+.btn-card img{
+    position: relative;
+    margin-top: 10px;
+
+    width: 40%;
+    margin-left: 80px;
+    padding: 10px;
+    border: 1px solid rgba(238, 227, 227, 0.877);
+    cursor: pointer;
+}
+
+.btn-card i{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: rgb(238, 194, 84); 
+    color: #FFFF;
+        top: 52%;
+    right: 25%;
+    padding: 4px;
+    border: 1px solid rgba(238, 227, 227, 0.877);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.puce{
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(238, 194, 84); 
+    color: #FFFF;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
